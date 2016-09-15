@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="run" name="CompileAndRunJava">
-<target name="compile">
-<java classname="sample.java.AntSample">
-<classpath path="target"/>
-</java>
-</target>
-<target name="run" depends="compile">
-<javac includeantruntime ="false" srcdir="./src" destdir="target"/>
-</target>
+	<target name="run" depends="compile">
+	<echo>Running Java Code </echo>
+		<java classname="sample.java.AntSample">
+			<classpath path="target" />
+		</java>
+	</target>
+	<target name="compile">
+		<echo>Compiling Java Code </echo>	
+		<javac includeantruntime="false" srcdir="./src" destdir="target" />
+	</target>
 </project>
