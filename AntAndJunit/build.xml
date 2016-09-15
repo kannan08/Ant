@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="runJunit" name="AntAndJunit">
+	<target name="runJunit" depends="compile">
+		<echo>Running Junit.... </echo>
+		<junit printsummary="on">
+		<test name="sample.test.EmployeeTest"/>
+			<classpath>
+			<pathelement location="junit-4.12.jar"></pathelement>
+			<pathelement location="target"></pathelement>
+			</classpath>
+		</junit>
+	</target>
+	<target name="compile">
+		<echo>Compiling Java Code.... </echo>
+		<javac includeantruntime="false" srcdir="./src" destdir="target" classpath="junit-4.12.jar"/>
+	</target>
+</project>
