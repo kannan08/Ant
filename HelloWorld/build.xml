@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="main target" name="Hello World">
+<target name="main target">
+<echo>Hello world Ant!!!</echo>
+</target>
+</project>
