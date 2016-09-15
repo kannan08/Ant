@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="main target" name="Hello World">
+<target name="main target">
+<echo>Executing target main!!!</echo>
+</target>
+<target name="target one">
+<echo>Executing target one!!!</echo>
+</target>
+<target name="target two">
+<echo>Executing target two!!!</echo>
+</target>
+</project>
